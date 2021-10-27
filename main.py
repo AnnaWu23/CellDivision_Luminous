@@ -18,13 +18,12 @@ images = []
 # ]
 
 cells_matching = {}
-
-
 # Data structure
 # List cells_matching {
 #   int id: A unique number marking the cell {
 #       Tuple center: (x, y) is the center of the cell
 #       Tuple color: (x, y, z) is the code for RGB color
+#       int index: the index of cell in list images
 #   },
 #   int id:{...},
 #   int id:{...}

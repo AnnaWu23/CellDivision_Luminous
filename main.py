@@ -24,6 +24,7 @@ cells_matching = {}
 #       Tuple center: (x, y) is the center of the cell
 #       Tuple color: (x, y, z) is the code for RGB color
 #       int index: the index of cell in list images
+#       List trajectories: the list of segments that cells move
 #   },
 #   int id:{...},
 #   int id:{...}
@@ -140,13 +141,13 @@ def find_centroid():
         img['contoursCenter'] = centroid
 
     # Initialized the dictionary for the first image
-
     cells = images[0]['contoursCenter']
     for cell, i in zip(cells, range(0, len(cells))):
-        dict = {'center': cell, 'color': color_generator(), 'index': i}
+        dict = {'center': cell, 'color': color_generator(), 'index': i, 'trajectories': []}
         cells_matching[i] = dict
 
     # Draw the contours, center and label for the image
+    images[0]['cellTrackDraw'] = images[0]['image_thre']
     draw_contours_center_label(0)
 
     # DEBUG
@@ -166,18 +167,24 @@ def color_generator():
 
 # Draw the contours for cells in terms of the current cells_matching
 def draw_contours_center_label(images_index):
-    global cells_matching
+    global cells_matching, images
     draw_contours = images[images_index]['image_thre']
     draw_center = draw_contours
     draw_label = draw_contours
+    draw_trajectories = draw_contours
     for id, cell in cells_matching.items():
-        draw_contours = cv2.drawContours(draw_contours, images[images_index]['contours'], cell['index'], cells_matching[id]['color'], 2)
+        draw_contours = cv2.drawContours(draw_contours, images[images_index]['contours'],
+                                         cell['index'], cells_matching[id]['color'], 2)
         draw_center = cv2.circle(draw_contours, cell['center'], 0, cells_matching[id]['color'], 2)
         draw_label = cv2.putText(draw_center, str(id), cell['center'], 1, 1, (255, 0, 255), 2)
+        for segment in cell['trajectories']:
+            draw_trajectories = cv2.line(draw_label, segment[0], segment[1],
+                         cells_matching[id]['color'], thickness=2)
     images[images_index]['contoursDraw'] = draw_contours
-    images[images_index]['contoursCenterDraw'] = draw_label
+    images[images_index]['coantoursCenterDraw'] = draw_label
+    images[images_index]['cellTrackDraw'] = draw_trajectories
 
-
+# Label the cells for each image
 def label_cells():
     global cells_matching
     # Loop through from the second image
@@ -185,14 +192,14 @@ def label_cells():
         new_cells_matching = {}
         # Scan through the cells in the unlabeled image 'images[index]', label it as we need
         centers_new = images[index]['contoursCenter']
-
         for cell_center, i in zip(centers_new, range(len(centers_new))):
             inherent_id = cell_in_last_image(cell_center)
             if inherent_id is not -1:
                 # The cell still exists, update the position of the cell in dictionary cells_matching
-                new_cells_matching[inherent_id] = {'center': cell_center, 'color': cells_matching[inherent_id]['color'],
-                                               'index': i}
-                cells_matching.pop(inherent_id)
+                cell_old = cells_matching.pop(inherent_id)
+                trajectories = cell_old['trajectories'] + [(cell_center, cell_old['center'])]
+                new_cells_matching[inherent_id] = {'center': cell_center, 'color': cell_old['color'],
+                                               'index': i, 'trajectories': trajectories}
             else:
                 # TODO: check if the cell is dividing or not
                 # conditions: cells jumping...
@@ -201,7 +208,8 @@ def label_cells():
                 max_id_new = 0 if len(new_cells_matching) is 0 else max(new_cells_matching)
                 max_id_old = 0 if len(cells_matching) is 0 else max(cells_matching)
                 max_id = max(max_id_old, max_id_new)
-                new_cells_matching[max_id + 1] = {'center': cell_center, 'color': color_generator(), 'index': i}
+                new_cells_matching[max_id + 1] = {'center': cell_center, 'color': color_generator(),
+                                                  'index': i, 'trajectories': []}
 
         # if len(new_cells_matching) == len(centers_new):
         #     print("yes")
@@ -261,6 +269,6 @@ if __name__ == '__main__':
     find_centroid()
     # Loop through all the frame, recognise the same cell and label it
     label_cells()
-    display_all_images([img['contoursCenterDraw'] for img in images])
+    display_all_images([img['cellTrackDraw'] for img in images])
     # b. Associate each cell in any frame to the spatially nearest cell in the next frame within a predefined range
 

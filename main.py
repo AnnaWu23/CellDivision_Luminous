@@ -267,8 +267,7 @@ if __name__ == '__main__':
     contours(image_list)
     # Find the center of the contours
     find_centroid()
-    # Loop through all the frame, recognise the same cell and label it
+    # Loop through all the frame, recognise the same cell and label it, label the track at the same time
     label_cells()
     display_all_images([img['cellTrackDraw'] for img in images])
-    # b. Associate each cell in any frame to the spatially nearest cell in the next frame within a predefined range
 

@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:task1" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ed475bbf-e569-4d18-a14b-91bb66da3814" name="Default Changelist" comment="repo created">
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t000.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t001.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t002.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t003.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t004.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t005.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t006.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t007.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t008.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t009.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t010.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t011.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t012.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t013.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t014.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t015.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t016.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t017.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t018.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t019.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t020.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t021.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t022.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t023.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t024.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t025.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t026.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t027.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t028.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t029.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t030.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t031.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t032.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t033.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t034.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t035.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t036.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t037.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t038.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t039.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t040.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t041.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t042.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t043.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t044.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t045.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t046.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t047.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t048.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t049.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t050.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t051.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t052.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t053.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t054.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t055.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t056.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t057.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t058.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t059.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t060.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t061.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t062.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t063.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t064.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t065.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t066.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t067.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t068.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t069.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t070.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t071.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t072.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t073.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t074.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t075.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t076.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t077.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t078.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t079.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t080.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t081.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t082.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t083.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t084.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t085.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t086.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t087.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t088.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t089.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t090.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01/t091.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg012.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg013.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg014.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg015.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg020.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg021.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg022.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg023.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg025.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg029.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg038.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg039.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg040.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg044.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg050.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg051.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg052.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg053.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg054.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg055.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg062.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg076.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg077.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg078.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg079.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg080.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg081.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/SEG/man_seg088.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track000.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track001.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track002.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track003.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track004.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track005.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track006.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track007.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track008.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track009.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track010.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track011.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track012.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track013.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track014.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track015.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track016.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track017.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track018.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track019.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track020.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track021.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track022.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track023.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track024.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track025.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track026.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track027.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track028.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track029.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track030.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track031.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track032.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track033.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track034.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track035.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track036.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track037.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track038.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track039.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track040.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track041.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track042.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track043.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track044.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track045.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track046.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track047.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track048.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track049.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track050.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track051.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track052.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track053.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track054.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track055.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track056.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track057.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track058.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track059.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track060.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track061.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track062.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track063.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track064.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track065.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track066.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track067.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track068.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track069.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track070.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track071.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track072.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track073.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track074.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track075.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track076.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track077.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track078.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track079.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track080.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track081.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track082.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track083.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track084.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track085.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track086.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track087.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track088.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track089.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track090.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/01_GT/TRA/man_track091.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t000.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t001.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t002.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t003.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t004.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t005.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t006.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t007.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t008.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t009.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t010.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t011.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t012.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t013.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t014.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t015.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t016.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t017.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t018.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t019.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t020.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t021.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t022.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t023.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t024.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t025.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t026.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t027.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t028.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t029.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t030.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t031.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t032.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t033.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t034.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t035.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t036.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t037.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t038.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t039.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t040.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t041.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t042.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t043.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t044.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t045.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t046.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t047.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t048.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t049.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t050.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t051.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t052.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t053.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t054.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t055.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t056.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t057.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t058.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t059.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t060.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t061.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t062.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t063.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t064.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t065.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t066.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t067.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t068.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t069.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t070.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t071.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t072.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t073.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t074.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t075.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t076.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t077.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t078.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t079.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t080.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t081.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t082.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t083.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t084.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t085.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t086.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t087.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t088.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t089.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t090.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02/t091.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/SEG/man_seg023.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/SEG/man_seg035.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/SEG/man_seg036.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/SEG/man_seg067.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/SEG/man_seg075.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/SEG/man_seg078.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/SEG/man_seg079.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/SEG/man_seg087.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track000.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track001.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track002.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track003.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track004.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track005.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track006.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track007.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track008.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track009.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track010.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track011.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track012.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track013.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track014.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track015.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track016.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track017.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track018.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track019.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track020.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track021.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track022.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track023.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track024.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track025.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track026.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track027.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track028.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track029.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track030.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track031.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track032.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track033.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track034.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track035.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track036.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track037.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track038.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track039.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track040.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track041.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track042.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track043.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track044.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track045.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track046.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track047.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track048.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track049.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track050.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track051.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track052.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track053.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track054.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track055.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track056.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track057.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track058.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track059.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track060.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track061.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track062.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track063.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track064.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track065.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track066.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track067.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track068.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track069.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track070.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track071.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track072.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track073.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track074.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track075.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track076.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track077.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track078.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track079.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track080.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track081.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track082.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track083.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track084.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track085.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track086.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track087.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track088.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track089.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track090.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/02_GT/TRA/man_track091.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t000.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t001.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t002.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t003.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t004.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t005.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t006.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t007.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t008.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t009.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t010.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t011.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t012.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t013.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t014.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t015.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t016.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t017.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t018.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t019.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t020.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t021.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t022.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t023.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t024.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t025.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t026.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t027.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t028.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t029.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t030.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t031.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t032.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t033.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t034.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t035.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t036.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t037.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t038.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t039.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t040.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t041.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t042.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t043.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t044.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t045.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t046.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t047.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t048.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t049.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t050.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t051.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t052.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t053.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t054.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t055.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t056.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t057.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t058.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t059.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t060.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t061.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t062.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t063.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t064.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t065.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t066.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t067.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t068.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t069.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t070.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t071.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t072.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t073.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t074.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t075.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t076.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t077.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t078.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t079.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t080.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t081.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t082.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t083.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t084.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t085.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t086.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t087.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t088.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t089.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t090.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/03/t091.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t000.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t001.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t002.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t003.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t004.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t005.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t006.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t007.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t008.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t009.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t010.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t011.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t012.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t013.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t014.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t015.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t016.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t017.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t018.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t019.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t020.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t021.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t022.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t023.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t024.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t025.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t026.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t027.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t028.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t029.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t030.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t031.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t032.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t033.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t034.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t035.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t036.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t037.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t038.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t039.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t040.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t041.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t042.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t043.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t044.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t045.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t046.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t047.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t048.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t049.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t050.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t051.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t052.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t053.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t054.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t055.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t056.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t057.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t058.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t059.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t060.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t061.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t062.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t063.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t064.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t065.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t066.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t067.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t068.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t069.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t070.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t071.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t072.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t073.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t074.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t075.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t076.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t077.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t078.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t079.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t080.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t081.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t082.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t083.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t084.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t085.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t086.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t087.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t088.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t089.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t090.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP9517 21T3 Group Project Dataset/Sequences/04/t091.tif" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zwTYpdBxh4WzKmEqMRcUqTQMM3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Uni Notes\COMP9517\group project\GroupProject_Luminous" />
+      <recent name="D:\Uni Notes\COMP9517\group project\GroupProject_Luminous\Sequences" />
+      <recent name="D:\Uni Notes\COMP9517\group project\GroupProject_Luminous\Dataset" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Anna\.conda\envs\GroupProject_Luminous\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed475bbf-e569-4d18-a14b-91bb66da3814" name="Default Changelist" comment="" />
+      <created>1635058200822</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635058200822</updated>
+    </task>
+    <task id="LOCAL-00001" summary="repo created">
+      <created>1635058352754</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635058352754</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="task1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="task1" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="repo created" />
+    <option name="LAST_COMMIT_MESSAGE" value="repo created" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1635163212573">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635163212573" />
+    <state x="686" y="198" key="FileChooserDialogImpl" timestamp="1635163691801">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="198" key="FileChooserDialogImpl/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635163691801" />
+    <state width="1895" height="285" key="GridCell.Tab.0.bottom" timestamp="1635304327603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="285" key="GridCell.Tab.0.bottom/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635304327603" />
+    <state width="1895" height="285" key="GridCell.Tab.0.center" timestamp="1635304327603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="285" key="GridCell.Tab.0.center/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635304327603" />
+    <state width="1895" height="285" key="GridCell.Tab.0.left" timestamp="1635304327603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="285" key="GridCell.Tab.0.left/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635304327603" />
+    <state width="1895" height="285" key="GridCell.Tab.0.right" timestamp="1635304327603">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="285" key="GridCell.Tab.0.right/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635304327603" />
+    <state width="1895" height="331" key="GridCell.Tab.1.bottom" timestamp="1635171402617">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="331" key="GridCell.Tab.1.bottom/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635171402617" />
+    <state width="1895" height="331" key="GridCell.Tab.1.center" timestamp="1635171402617">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="331" key="GridCell.Tab.1.center/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635171402617" />
+    <state width="1895" height="331" key="GridCell.Tab.1.left" timestamp="1635171402617">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="331" key="GridCell.Tab.1.left/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635171402617" />
+    <state width="1895" height="331" key="GridCell.Tab.1.right" timestamp="1635171402617">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1895" height="331" key="GridCell.Tab.1.right/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635171402617" />
+    <state x="686" y="221" key="RollbackChangesDialog" timestamp="1635162671835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="221" key="RollbackChangesDialog/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635162671835" />
+    <state x="461" y="143" key="SettingsEditor" timestamp="1635167308140">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="143" key="SettingsEditor/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635167308140" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1635163175255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635163175255" />
+    <state x="515" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1635297042772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="515" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635297042772" />
+    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1635162817455">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635162817455" />
+  </component>
+</project>

@@ -124,7 +124,7 @@ def opening():
 # Segment cells in images, find the contours of the them, record the cells' contours label in the list 'images'
 def contours():
     for img in images:
-        contour, hierarchy = cv2.findContours(img['image_open'], cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        _, contour, _ = cv2.findContours(img['image_open'], cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         contours_new = []
         for i in contour:
             if cv2.contourArea(i) > 30:

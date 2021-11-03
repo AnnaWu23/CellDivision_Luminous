@@ -22,6 +22,7 @@ images = []
 #       List<int> contours: A list storing the contours of cells in a frame
 #       List<int> contours_center: A list saving the centroid of the cells in a frame
 #       Image cell_track_draw: Images showing cells' contour, label, center and trajectories
+#       Image cell_count_draw: Images showing the cells' contour, label, center, trajectories and count
 #   },{...},{...}
 # ]
 
@@ -195,6 +196,14 @@ def label_cells():
         draw_contours_center_label(index)
 
 
+def cell_count():
+    global cells_matching, images
+    for frame in images:
+        count = cv2.putText(frame['cell_track_draw'], "COUNT: " + str(len(frame['contours'])),
+                            (50, 50), 1, 2, (255, 0, 255), 2)
+        frame['cell_count_draw'] = count
+
+
 ###################### HELPER FUNCTION ######################
 # Print out the image's max and min value of the pixels
 def check_image_range(img):
@@ -262,6 +271,7 @@ def draw_contours_center_label(images_index):
     images[images_index]['cell_track_draw'] = draw_trajectories
 
 
+
 # NOTICE: WE USE OPENING INSTEAD OF EROSION THEN DILATION
 # # Dealing with image erosion, target to reducing the noise in the threshold image
 # def erosion(img):
@@ -309,9 +319,14 @@ if __name__ == '__main__':
     find_centroid()
     # b. Loop through all the frame, recognise the same cell and label it, label the trajectories at the same time
     label_cells()
-    display_all_images([img['cell_track_draw'] for img in images])
+    # display_all_images([img['cell_track_draw'] for img in images])
     # save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
     # Task 2.1: The cell count (the number of cells) in the image.
+    cell_count()
+    display_all_images([img['cell_count_draw'] for img in images])
+
+    # save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
+
     # Task 2.2: The average size (in pixels) of all the cells in the image.
     # Task 2.3: The average displacement (in pixels) of all the cells, from the previous image to the
     #           current image in the sequence.

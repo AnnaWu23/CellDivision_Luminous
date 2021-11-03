@@ -8,7 +8,7 @@ SEQUENCE = '01'
 # If the cells' movement between two frame is less than DIST, it's the same cell.
 DIST = 21
 # The kernel size in opening.
-OPEN_KERNEL_SIZE = 2
+OPEN_KERNEL_SIZE = 3
 # The time for each image displaying when it is automatically playing.The unit is milliseconds.
 SPEED = 500
 
@@ -123,7 +123,7 @@ def opening():
 # Segment cells in images, find the contours of the them, record the cells' contours label in the list 'images'
 def contours():
     for img in images:
-        img_label, contour, hierarchy = cv2.findContours(img['image_open'], cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        contour, hierarchy = cv2.findContours(img['image_open'], cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         contours_new = []
         for i in contour:
             if cv2.contourArea(i) > 30:

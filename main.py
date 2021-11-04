@@ -324,7 +324,6 @@ if __name__ == '__main__':
     # Task 2.1: The cell count (the number of cells) in the image.
     cell_count()
     display_all_images([img['cell_count_draw'] for img in images])
-
     # save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
 
     # Task 2.2: The average size (in pixels) of all the cells in the image.

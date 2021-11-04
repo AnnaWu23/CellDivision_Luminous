@@ -12,7 +12,7 @@ SEQUENCE = '01'
 # If the cells' movement between two frame is less than DIST, it's the same cell.
 DIST = 21
 # The kernel size in opening.
-OPEN_KERNEL_SIZE = 4
+OPEN_KERNEL_SIZE = 3
 # The time for each image displaying when it is automatically playing.The unit is milliseconds.
 SPEED = 500
 
@@ -123,20 +123,17 @@ def apply_meanshift(img):
 
 
 def apply_watershed(img):
-    # noise removal
     kernel = np.ones((3,3), np.uint8)
     opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel, iterations=1)
     plt.imshow(opening)
     plt.show()
-    # sure background area
-    sure_bg = cv2.dilate(opening, kernel, iterations=2)
-    # Finding sure foreground area
-    dist_transform = cv2.distanceTransform(opening, cv2.DIST_L2, 5)
-    ret, sure_fg = cv2.threshold(dist_transform, dist_transform.max(), 255, 0)
 
-    # Finding unknown region
-    sure_fg = np.uint8(sure_fg)
-    unknown = cv2.subtract(sure_bg, sure_fg)
+    # Finding sure foreground area
+    dist_transform = cv2.distanceTransform(opening, cv2.DIST_L2, maskSize=0)
+    plt.imshow(dist_transform)
+    plt.show()
+
+
     # Marker labelling
     ret, markers = cv2.connectedComponents(sure_fg)
     plt.imshow(ret)
@@ -188,8 +185,6 @@ def opening():
         # DEBUG: check the shape of the output
         # print("Type: " + str(opening.dtype) + " Shape: " + str(opening.shape))
         # gray = cv2.cvtColor(opening, cv2.COLOR_RGB2GRAY)?
-
-
 
 # Segment cells in images, find the contours of the them, record the cells' contours label in the list 'images'
 def contours():
@@ -362,12 +357,13 @@ if __name__ == '__main__':
     check_image_range(image_list[0])
     # c. Since the image contrast is too low, let's do a contrast stretch first
     image_list = image_stretch(image_list)
+    ws_labels = apply_watershed(image_list[0])
     # save_images(image_list, "Dataset/AllImagesAfterStretching")
     # d. No equalization needed, UNCOMMENT THIS TO CHECK THE HISTOGRAM
     # show_histogram(image_list[0])
     # e. Thresholding
-    threshold(image_list)
-    ws_labels = apply_watershed(images[0]['image_thre'])
+    # threshold(image_list)
+    # ws_labels = apply_watershed(images[0]['image_thre'])
     plt.imshow(ws_labels)
     plt.show()
     # save_images([img['image_thre'] for img in images], "Dataset/AllImagesAfterThreshold")

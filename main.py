@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import random
+from math import sqrt
 
 SEQUENCE = '01'
 # If the cells' movement between two frame is less than DIST, it's the same cell.
@@ -11,7 +12,6 @@ DIST = 21
 OPEN_KERNEL_SIZE = 3
 # The time for each image displaying when it is automatically playing.The unit is milliseconds.
 SPEED = 500
-
 
 images = []
 # Data structure
@@ -27,6 +27,8 @@ images = []
 # ]
 
 cells_matching = {}
+
+
 # Data structure
 # Dict cells_matching {
 #   int id: A unique number marking the cell {
@@ -102,6 +104,7 @@ def threshold(image_list):
         # cv2.waitKey(0)
         # cv2.destroyAllWindows()
 
+
 # Opening is just another name of erosion followed by dilation.
 # It is useful in removing noise, as we explained above.
 # Here we use the function,
@@ -118,7 +121,6 @@ def opening():
         # DEBUG: check the shape of the output
         # print("Type: " + str(opening.dtype) + " Shape: " + str(opening.shape))
         # gray = cv2.cvtColor(opening, cv2.COLOR_RGB2GRAY)?
-
 
 
 # Segment cells in images, find the contours of the them, record the cells' contours label in the list 'images'
@@ -166,6 +168,8 @@ def label_cells():
     # Loop through from the second image
     for index in range(1, len(images)):
         new_cells_matching = {}
+        total_displacement = 0
+        total_number = 0
         # Scan through the cells in the unlabeled image 'images[index]', label it as we need
         centers_new = images[index]['contours_center']
         for cell_center, i in zip(centers_new, range(len(centers_new))):
@@ -174,23 +178,26 @@ def label_cells():
                 # The cell still exists, update the position of the cell in dictionary cells_matching
                 cell_old = cells_matching.pop(inherent_id)
                 trajectories = cell_old['trajectories'] + [(cell_center, cell_old['center'])]
+                total_displacement += get_displacement(cell_old['center'], cell_center)
                 new_cells_matching[inherent_id] = {'center': cell_center, 'color': cell_old['color'],
                                                    'index': i, 'trajectories': trajectories}
+
             else:
-                # conditions: cells jumping...
                 # Give the cell a new label, delete the nearest label from the last frame
                 max_id_new = 0 if len(new_cells_matching) is 0 else max(new_cells_matching)
                 max_id_old = 0 if len(cells_matching) is 0 else max(cells_matching)
                 max_id = max(max_id_old, max_id_new)
                 new_cells_matching[max_id + 1] = {'center': cell_center, 'color': color_generator(),
                                                   'index': i, 'trajectories': []}
+                total_number += 1
 
         # DEBUG: Check if the number of cells detected is same to what we saved in dictionary
         # if len(new_cells_matching) == len(centers_new):
         #     print("yes")
         # else:
         #     print('no')
-
+        print("average_displacement of this image is " + str(total_displacement // len(images[index]['contours'])))
+        print("cell motion number  of this image is " + str(total_number))
         cells_matching = new_cells_matching
         # Draw the contours, center and label for the image
         draw_contours_center_label(index)
@@ -202,6 +209,35 @@ def cell_count():
         count = cv2.putText(frame['cell_track_draw'], "COUNT: " + str(len(frame['contours'])),
                             (50, 50), 1, 2, (255, 0, 255), 2)
         frame['cell_count_draw'] = count
+
+
+def get_average_size():
+    global images
+    for frame in images:
+        sum_pixels = 0
+        a, b = frame['image_open'].shape
+        for i in range(int(a * 0.2), int(a * 0.8) + 1):
+            for j in range(int(b * 0.2), int(b * 0.8) + 1):
+                sum_pixels += frame['image_open'][i, j]
+        print("average_size of this image is " + str(sum_pixels // len(frame['contours'])))
+
+
+def get_displacement(x, y):
+    return sqrt((x[0] - x[1]) ** 2 + (y[0] - y[1]) ** 2)
+
+
+def detect_dividing():
+    global images
+    #(x, y), (minor, major), angle = cv2.fitEllipse(images[4]['contours'])
+    for point in images[4]['contours']:
+        # (x, y), (minor, major), angle = cv2.fitEllipse(point)
+        box = cv2.fitEllipse(point)
+        print(box)
+    # ratio = major / minor
+    # if ratio > 2:
+    #     return False
+    # else:
+    #     return True
 
 
 ###################### HELPER FUNCTION ######################
@@ -271,7 +307,6 @@ def draw_contours_center_label(images_index):
     images[images_index]['cell_track_draw'] = draw_trajectories
 
 
-
 # NOTICE: WE USE OPENING INSTEAD OF EROSION THEN DILATION
 # # Dealing with image erosion, target to reducing the noise in the threshold image
 # def erosion(img):
@@ -323,7 +358,11 @@ if __name__ == '__main__':
     # save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
     # Task 2.1: The cell count (the number of cells) in the image.
     cell_count()
-    display_all_images([img['cell_count_draw'] for img in images])
+    detect_dividing()
+    # get_average_size()
+
+    # display_all_images([img['cell_count_draw'] for img in images])
+
     # save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
 
     # Task 2.2: The average size (in pixels) of all the cells in the image.

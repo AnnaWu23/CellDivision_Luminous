@@ -77,19 +77,14 @@ def image_read():
 # Stretching the image. Convert the 16 bit image to 8 bit image and augment the contrast
 def image_stretch(image_list):
     output = []
-    a = 0
-    b = 255
     for img in image_list:
         arr = np.array([])
-        img = np.uint8(img)
-        # c = np.min(img)
-        # d = np.max(img)
-        # image = ((img - c) * ((b - a) / (d - c)) + a).astype(np.uint8)
         image = cv2.normalize(img, arr, 0, 255, cv2.NORM_MINMAX, cv2.CV_8U)
         output.append(image)
 
     # Check the image range
     check_image_range(output[0])
+
 
     # DEBUG: Uncomment to plot the image
     # plt.imshow(image_list[0], 'gray')
@@ -123,27 +118,36 @@ def apply_meanshift(img):
 
 
 def apply_watershed(img):
-    kernel = np.ones((3,3), np.uint8)
-    opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel, iterations=1)
-    plt.imshow(opening)
-    plt.show()
+    cv2.imshow("after normalize", img)
+    cv2.waitKey(0)
+    distance = cv2.distanceTransform(img, distanceType=2, maskSize=0)
+    cv2.imshow("distance", distance)
+    cv2.waitKey(0)
 
-    # Finding sure foreground area
-    dist_transform = cv2.distanceTransform(opening, cv2.DIST_L2, maskSize=0)
-    plt.imshow(dist_transform)
-    plt.show()
+    # METHOD 1
+    # kernel = np.ones((3,3), np.uint8)
+    # opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel, iterations=1)
+    # plt.imshow(opening)
+    # plt.show()
+    #
+    # # Finding sure foreground area
+    # dist_transform = cv2.distanceTransform(opening, cv2.DIST_L2, maskSize=0)
+    # plt.imshow(dist_transform)
+    # plt.show()
+    #
+    #
+    # # Marker labelling
+    # ret, markers = cv2.connectedComponents(sure_fg)
+    # plt.imshow(ret)
+    # plt.show()
+    #
+    #
+    # # Now, mark the region of unknown with zero
+    # markers = watershed(img, markers)
+    # plt.imshow(markers)
+    # plt.show()
 
-
-    # Marker labelling
-    ret, markers = cv2.connectedComponents(sure_fg)
-    plt.imshow(ret)
-    plt.show()
-
-
-    # Now, mark the region of unknown with zero
-    markers = watershed(img, markers)
-    plt.imshow(markers)
-    plt.show()
+    # METHOD 2
     # distance = cv2.distanceTransform(img, distanceType=2, maskSize=0)
     # plt.imshow(distance)
     # plt.show()

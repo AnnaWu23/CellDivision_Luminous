@@ -4,8 +4,6 @@ import random
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy import ndimage as ndi
-from skimage.segmentation import watershed
 from sklearn.cluster import MeanShift
 
 SEQUENCE = '01'
@@ -15,7 +13,6 @@ DIST = 21
 OPEN_KERNEL_SIZE = 3
 # The time for each image displaying when it is automatically playing.The unit is milliseconds.
 SPEED = 500
-
 
 images = []
 # Data structure
@@ -30,6 +27,8 @@ images = []
 # ]
 
 cells_matching = {}
+
+
 # Data structure
 # Dict cells_matching {
 #   int id: A unique number marking the cell {
@@ -85,7 +84,6 @@ def image_stretch(image_list):
     # Check the image range
     check_image_range(output[0])
 
-
     # DEBUG: Uncomment to plot the image
     # plt.imshow(image_list[0], 'gray')
     # plt.show()
@@ -116,56 +114,11 @@ def apply_meanshift(img):
 
     return ms_labels
 
-
-def apply_watershed(img):
-    cv2.imshow("after normalize", img)
-    cv2.waitKey(0)
-    distance = cv2.distanceTransform(img, distanceType=2, maskSize=0)
-    cv2.imshow("distance", distance)
-    cv2.waitKey(0)
-
-    # METHOD 1
-    # kernel = np.ones((3,3), np.uint8)
-    # opening = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel, iterations=1)
-    # plt.imshow(opening)
-    # plt.show()
-    #
-    # # Finding sure foreground area
-    # dist_transform = cv2.distanceTransform(opening, cv2.DIST_L2, maskSize=0)
-    # plt.imshow(dist_transform)
-    # plt.show()
-    #
-    #
-    # # Marker labelling
-    # ret, markers = cv2.connectedComponents(sure_fg)
-    # plt.imshow(ret)
-    # plt.show()
-    #
-    #
-    # # Now, mark the region of unknown with zero
-    # markers = watershed(img, markers)
-    # plt.imshow(markers)
-    # plt.show()
-
-    # METHOD 2
-    # distance = cv2.distanceTransform(img, distanceType=2, maskSize=0)
-    # plt.imshow(distance)
-    # plt.show()
-    # # ? distance = ndi.maximum_filter(img, 20)
-    # seed = ndi.maximum_filter(distance, 5)
-    # plt.imshow(seed)
-    # plt.show()
-    # seed = seed.astype(np.uint8)
-    # _, labels = cv2.connectedComponents(seed)
-    # ws_labels = watershed(-distance, labels, mask=img)
-
-    return ws_labels
-
 # Apply the threshold to the images - OTSU thresholding
 def threshold(image_list):
     for img in image_list:
-        _, image = cv2.threshold(img, 0, 255, cv2.THRESH_OTSU)
-        dict = {'image_thre': image}
+        _, image = cv2.threshold(img, 0, 255, cv2.THRESH_OTSU + cv2.THRESH_BINARY)
+        dict = {'image_thre': image, 'image_strech': img}
         images.append(dict)
         # DEBUG: Uncomment to see the images
         # cv2.imshow("threshold", image)
@@ -190,10 +143,27 @@ def opening():
         # print("Type: " + str(opening.dtype) + " Shape: " + str(opening.shape))
         # gray = cv2.cvtColor(opening, cv2.COLOR_RGB2GRAY)?
 
+# Source: https://opencv24-python-tutorials.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_watershed/py_watershed.html
+def apply_watershed():
+    global images
+    kernel = np.ones((3, 3), np.uint8)
+    for img in images:
+        image_bg = cv2.dilate(img['image_open'], kernel, iterations=10)
+        distance = cv2.distanceTransform(img['image_open'], distanceType=2, maskSize=5)
+        _, image_fg = cv2.threshold(distance, 0.5 * distance.max(), 255, 0)
+        image_fg = np.uint8(image_fg)
+        unknown = cv2.subtract(image_bg, image_fg)
+        _, marker = cv2.connectedComponents(image_fg)
+        marker += 10
+        marker[unknown == 255] = 0
+        image = cv2.cvtColor(img['image_strech'], cv2.COLOR_GRAY2RGB)
+        ws_labels = cv2.watershed(image, marker)
+        img['image_ws'] = ws_labels.astype(np.uint8)
+
 # Segment cells in images, find the contours of the them, record the cells' contours label in the list 'images'
 def contours():
     for img in images:
-        img_label, contour = cv2.findContours(img['image_open'], cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        img_label, contour = cv2.findContours(img['image_ws'], cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         contours_new = []
         for i in contour:
             contours_new.append(i)
@@ -361,28 +331,25 @@ if __name__ == '__main__':
     check_image_range(image_list[0])
     # c. Since the image contrast is too low, let's do a contrast stretch first
     image_list = image_stretch(image_list)
-    ws_labels = apply_watershed(image_list[0])
     # save_images(image_list, "Dataset/AllImagesAfterStretching")
     # d. No equalization needed, UNCOMMENT THIS TO CHECK THE HISTOGRAM
     # show_histogram(image_list[0])
     # e. Thresholding
-    # threshold(image_list)
-    # ws_labels = apply_watershed(images[0]['image_thre'])
-    plt.imshow(ws_labels)
-    plt.show()
+    threshold(image_list)
     # save_images([img['image_thre'] for img in images], "Dataset/AllImagesAfterThreshold")
     # f. remove the noise of the images by erosion and dilation
-    # opening()
+    opening()
+    apply_watershed()
     # display_all_images([img['image_open'] for img in images])
-    # save_images([img['image_open'] for img in images], "Dataset/AllImagesAfterOpening")
+    # save_images([img['image_open'] for img in images], "Dataset/AllImagesAfterWatershed")
     # Task 1.1: Segment all the cells and show their contours in the images as overlays.
-    #contours()
-    # display_all_images([img['cell_track_draw'] for img in images])
+    contours()
+    display_all_images([img['cell_track_draw'] for img in images])
     # Task 1.2: Track all the cells over time and show their trajectories as overlays.
     # a. Find the center of the cells, label it and save the diagram
-    #find_centroid()
+    # find_centroid()
     # b. Loop through all the frame, recognise the same cell and label it, label the trajectories at the same time
-    #label_cells()
+    # label_cells()
     # display_all_images([img['cell_track_draw'] for img in images])
     # save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
     # Task 2.1: The cell count (the number of cells) in the image.

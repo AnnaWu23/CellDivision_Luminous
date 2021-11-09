@@ -4,15 +4,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 from math import sqrt
+import pyefd
 
 SEQUENCE = '01'
 # If the cells' movement between two frame is less than DIST, it's the same cell.
 DIST = 21
 # The kernel size in opening.
 OPEN_KERNEL_SIZE = 3
+ROTATION = 25
+RATIO = 0.3
 # The time for each image displaying when it is automatically playing.The unit is milliseconds.
 SPEED = 500
 
+# We are using the images to store all the information about those images, such as cells' contours, cell's centres and
+# and so on.
 images = []
 # Data structure
 # List images [
@@ -23,12 +28,15 @@ images = []
 #       List<int> contours_center: A list saving the centroid of the cells in a frame
 #       Image cell_track_draw: Images showing cells' contour, label, center and trajectories
 #       Image cell_count_draw: Images showing the cells' contour, label, center, trajectories and count
+#       List<contours> new_cells: The index of the new cells in the list contours. New cells are the cells that not in
+#                                 last frame but show up in this frame.
+#       Image cell_dividing_draw: 带轮廓带轨迹带分裂框
 #   },{...},{...}
 # ]
 
+# We are using cells_matching to store the information of each cells in a frame. The dictionary is updating
+# in function 'label_cells'.
 cells_matching = {}
-
-
 # Data structure
 # Dict cells_matching {
 #   int id: A unique number marking the cell {
@@ -170,10 +178,13 @@ def label_cells():
         new_cells_matching = {}
         total_displacement = 0
         total_number = 0
+        # If the cell is new, check if it's dividing from the other cells
+        # We will store the index of those new cells such that we can use it in detect_dividing
+        new_cells = []
         # Scan through the cells in the unlabeled image 'images[index]', label it as we need
         centers_new = images[index]['contours_center']
         for cell_center, i in zip(centers_new, range(len(centers_new))):
-            inherent_id = cell_in_last_image(cell_center)
+            inherent_id = cell_in_last_image(index, i)
             if inherent_id is not -1:
                 # The cell still exists, update the position of the cell in dictionary cells_matching
                 cell_old = cells_matching.pop(inherent_id)
@@ -183,6 +194,7 @@ def label_cells():
                                                    'index': i, 'trajectories': trajectories}
 
             else:
+                new_cells.append(i)
                 # Give the cell a new label, delete the nearest label from the last frame
                 max_id_new = 0 if len(new_cells_matching) is 0 else max(new_cells_matching)
                 max_id_old = 0 if len(cells_matching) is 0 else max(cells_matching)
@@ -198,6 +210,7 @@ def label_cells():
         #     print('no')
         print("average_displacement of this image is " + str(total_displacement // len(images[index]['contours'])))
         print("cell motion number  of this image is " + str(total_number))
+        images[index]['new_cells'] = new_cells
         cells_matching = new_cells_matching
         # Draw the contours, center and label for the image
         draw_contours_center_label(index)
@@ -223,16 +236,25 @@ def get_average_size():
 
 
 def get_displacement(x, y):
-    return sqrt((x[0] - x[1]) ** 2 + (y[0] - y[1]) ** 2)
+    return sqrt((x[0] - y[0]) ** 2 + (x[1] - y[1]) ** 2)
 
 
+# This will
 def detect_dividing():
     global images
-    #(x, y), (minor, major), angle = cv2.fitEllipse(images[4]['contours'])
-    for point in images[4]['contours']:
-        # (x, y), (minor, major), angle = cv2.fitEllipse(point)
-        box = cv2.fitEllipse(point)
-        print(box)
+    images[0]['new_cells'] = []
+    images[0]['cell_dividing_draw'] = images[0]['cell_count_draw']
+    pair = 0
+    for index in range(1, len(images)):
+        for new_cell_index in images[index]['new_cells']:
+            cells_nearby = check_parent_cell(new_cell_index, images[index])
+            if len(cells_nearby) == 1:
+                # draw cells
+                draw_cell_dividing(index, cells_nearby[0], new_cell_index)
+                # print("Warning: " + str(len(cells_nearby)))
+        if pair == 0:
+            images[index]['cell_dividing_draw'] = images[index]['cell_count_draw']
+        pair = 0
     # ratio = major / minor
     # if ratio > 2:
     #     return False
@@ -268,13 +290,33 @@ def show_histogram(img):
 # It takes the cell's center axis and the cells' position from the last frame, check if the cell is still
 # exist in this frame.
 # return: Corresponding id if the cell still exists, otherwise -1
-def cell_in_last_image(cell):
+def cell_in_last_image(image_index, cell_index):
+    similarity = {}
+    order = pyefd.elliptic_fourier_descriptors(np.squeeze(images[image_index]['contours'][cell_index]),
+                                               order=8, normalize=True)
+    order = order.flatten()[3:]
     for id, old_cell in cells_matching.items():
-        if old_cell['center'][0] - DIST < cell[0] <= old_cell['center'][0] + DIST \
-                and old_cell['center'][1] - DIST < cell[1] <= old_cell['center'][1] + DIST:
+        dist = get_displacement(old_cell['center'], images[image_index]['contours_center'][cell_index])
+        dist = dist/DIST if dist < DIST else 1
+        if dist < 0.1:
             return id
     return -1
 
+def check_parent_cell(new_cell_index, img):
+    (x, y), (minor, major), angle = cv2.fitEllipse(img['contours'][new_cell_index])
+    ratio = major/minor
+    cells_nearby = []
+    for cell, index in zip(img['contours'], range(len(img['contours']))):
+        if new_cell_index == index:
+            continue
+        if get_displacement(img['contours_center'][new_cell_index], img['contours_center'][index]) < 30:
+            (_, _), (minor_parent, major_parent), angle_parent = \
+                cv2.fitEllipse(img['contours'][new_cell_index])
+            ratio_parent = major_parent/minor_parent
+            if ratio_parent - RATIO < ratio < ratio_parent + RATIO \
+                and angle_parent - ROTATION < angle < angle_parent + ROTATION:
+                cells_nearby.append(index)
+    return cells_nearby
 
 # Automatically playing the image
 def display_all_images(image_list):
@@ -306,6 +348,12 @@ def draw_contours_center_label(images_index):
                                          cells_matching[id]['color'], thickness=2)
     images[images_index]['cell_track_draw'] = draw_trajectories
 
+def draw_cell_dividing(image_index, child_cell_index, parent_cell_index):
+    child_center = images[image_index]['contours_center'][child_cell_index]
+    parent_center = images[image_index]['contours_center'][parent_cell_index]
+    center = (int((child_center[0] + parent_center[0])/2), int((child_center[1] + parent_center[1])/2))
+    images[image_index]['cell_dividing_draw'] = cv2.circle(images[image_index]['cell_count_draw'],
+                                                           center, 30, (0, 255, 0), 3)
 
 # NOTICE: WE USE OPENING INSTEAD OF EROSION THEN DILATION
 # # Dealing with image erosion, target to reducing the noise in the threshold image
@@ -359,6 +407,7 @@ if __name__ == '__main__':
     # Task 2.1: The cell count (the number of cells) in the image.
     cell_count()
     detect_dividing()
+    display_all_images([img['cell_dividing_draw'] for img in images])
     # get_average_size()
 
     # display_all_images([img['cell_count_draw'] for img in images])

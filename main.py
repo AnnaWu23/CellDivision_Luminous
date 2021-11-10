@@ -244,8 +244,8 @@ def detect_dividing():
     global images
     images[0]['new_cells'] = []
     images[0]['cell_dividing_draw'] = images[0]['cell_count_draw']
-    pair = 0
     for index in range(1, len(images)):
+        pair = 0
         for new_cell_index in images[index]['new_cells']:
             cells_nearby = check_parent_cell(new_cell_index, images[index])
             if len(cells_nearby) == 1:
@@ -254,7 +254,6 @@ def detect_dividing():
                 # print("Warning: " + str(len(cells_nearby)))
         if pair == 0:
             images[index]['cell_dividing_draw'] = images[index]['cell_count_draw']
-        pair = 0
     # ratio = major / minor
     # if ratio > 2:
     #     return False
@@ -291,14 +290,14 @@ def show_histogram(img):
 # exist in this frame.
 # return: Corresponding id if the cell still exists, otherwise -1
 def cell_in_last_image(image_index, cell_index):
-    similarity = {}
-    order = pyefd.elliptic_fourier_descriptors(np.squeeze(images[image_index]['contours'][cell_index]),
-                                               order=8, normalize=True)
-    order = order.flatten()[3:]
+    # similarity = {}
+    # order = pyefd.elliptic_fourier_descriptors(np.squeeze(images[image_index]['contours'][cell_index]),
+    #                                            order=8, normalize=True)
+    # order = order.flatten()[3:]
     for id, old_cell in cells_matching.items():
         dist = get_displacement(old_cell['center'], images[image_index]['contours_center'][cell_index])
         dist = dist/DIST if dist < DIST else 1
-        if dist < 0.1:
+        if dist is not 1:
             return id
     return -1
 
@@ -406,16 +405,15 @@ if __name__ == '__main__':
     # save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
     # Task 2.1: The cell count (the number of cells) in the image.
     cell_count()
-    detect_dividing()
-    display_all_images([img['cell_dividing_draw'] for img in images])
-    # get_average_size()
+    # display_all_images([img['cell_dividing_draw'] for img in images])
 
     # display_all_images([img['cell_count_draw'] for img in images])
 
-    # save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
-
     # Task 2.2: The average size (in pixels) of all the cells in the image.
+    # get_average_size()
     # Task 2.3: The average displacement (in pixels) of all the cells, from the previous image to the
     #           current image in the sequence.
     # Task 2.4: The number of cells that are in the process of dividing. visually alert the viewer
     #           where in the image these divisions are happening
+    detect_dividing()
+    save_images([img['cell_dividing_draw'] for img in images], "Dataset/AllImagesWithCellDividing")

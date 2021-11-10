@@ -353,8 +353,8 @@ if __name__ == '__main__':
     find_centroid()
     # b. Loop through all the frame, recognise the same cell and label it, label the trajectories at the same time
     label_cells()
-    display_all_images([img['cell_track_draw'] for img in images])
-    save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
+    # display_all_images([img['cell_track_draw'] for img in images])
+    # save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
     # Task 2.1: The cell count (the number of cells) in the image.
     # Task 2.2: The average size (in pixels) of all the cells in the image.
     # Task 2.3: The average displacement (in pixels) of all the cells, from the previous image to the

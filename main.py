@@ -6,7 +6,7 @@ import random
 from math import sqrt
 import pyefd
 
-SEQUENCE = '01'
+SEQUENCE = '02'
 # If the cells' movement between two frame is less than DIST, it's the same cell.
 DIST = 21
 # The kernel size in opening.

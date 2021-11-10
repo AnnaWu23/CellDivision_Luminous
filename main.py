@@ -158,12 +158,15 @@ def apply_watershed():
         marker[unknown == 255] = 0
         image = cv2.cvtColor(img['image_strech'], cv2.COLOR_GRAY2RGB)
         ws_labels = cv2.watershed(image, marker)
-        img['image_ws'] = ws_labels.astype(np.uint8)
+        # https://stackoverflow.com/questions/50882663/find-contours-after-watershed-opencv
+        ws_labels = ws_labels.astype(np.uint8)
+        _, img['image_ws'] = cv2.threshold(ws_labels, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+
 
 # Segment cells in images, find the contours of the them, record the cells' contours label in the list 'images'
 def contours():
     for img in images:
-        img_label, contour = cv2.findContours(img['image_ws'], cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        _, contour, _ = cv2.findContours(img['image_ws'], cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         contours_new = []
         for i in contour:
             contours_new.append(i)
@@ -344,14 +347,14 @@ if __name__ == '__main__':
     # save_images([img['image_open'] for img in images], "Dataset/AllImagesAfterWatershed")
     # Task 1.1: Segment all the cells and show their contours in the images as overlays.
     contours()
-    display_all_images([img['cell_track_draw'] for img in images])
+    # display_all_images([img['cell_track_draw'] for img in images])
     # Task 1.2: Track all the cells over time and show their trajectories as overlays.
     # a. Find the center of the cells, label it and save the diagram
-    # find_centroid()
+    find_centroid()
     # b. Loop through all the frame, recognise the same cell and label it, label the trajectories at the same time
-    # label_cells()
-    # display_all_images([img['cell_track_draw'] for img in images])
-    # save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
+    label_cells()
+    display_all_images([img['cell_track_draw'] for img in images])
+    save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
     # Task 2.1: The cell count (the number of cells) in the image.
     # Task 2.2: The average size (in pixels) of all the cells in the image.
     # Task 2.3: The average displacement (in pixels) of all the cells, from the previous image to the

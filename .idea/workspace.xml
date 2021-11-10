@@ -20,14 +20,12 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:task1.2_Yanyun-WU" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:task2_qian" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed475bbf-e569-4d18-a14b-91bb66da3814" name="Default Changelist" comment="repo created">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ed475bbf-e569-4d18-a14b-91bb66da3814" name="Default Changelist" comment="repo created" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +134,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="task1.2_Yanyun-WU" />
+                        <option value="task2_qian" />
                       </list>
                     </value>
                   </entry>
@@ -252,5 +250,9 @@
     </state>
     <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1635162817455" />
     <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1635647771052" />
+    <state x="596" y="162" key="git4idea.branch.GitSmartOperationDialog" timestamp="1636514649571">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="596" y="162" key="git4idea.branch.GitSmartOperationDialog/-1600.0.1280.688/0.0.1920.1040@0.0.1920.1040" timestamp="1636514649571" />
   </component>
 </project>

@@ -405,12 +405,9 @@ if __name__ == '__main__':
     # save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
     # Task 2.1: The cell count (the number of cells) in the image.
     cell_count()
-    # display_all_images([img['cell_dividing_draw'] for img in images])
-
     # display_all_images([img['cell_count_draw'] for img in images])
-
     # Task 2.2: The average size (in pixels) of all the cells in the image.
-    # get_average_size()
+    get_average_size()
     # Task 2.3: The average displacement (in pixels) of all the cells, from the previous image to the
     #           current image in the sequence.
     # Task 2.4: The number of cells that are in the process of dividing. visually alert the viewer

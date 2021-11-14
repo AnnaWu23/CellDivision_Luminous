@@ -344,7 +344,7 @@ if __name__ == '__main__':
     opening()
     apply_watershed()
     # display_all_images([img['image_open'] for img in images])
-    # save_images([img['image_open'] for img in images], "Dataset/AllImagesAfterWatershed")
+    save_images([img['image_ws'] for img in images], "Dataset/AllImagesAfterWatershed")
     # Task 1.1: Segment all the cells and show their contours in the images as overlays.
     contours()
     # display_all_images([img['cell_track_draw'] for img in images])
@@ -354,7 +354,7 @@ if __name__ == '__main__':
     # b. Loop through all the frame, recognise the same cell and label it, label the trajectories at the same time
     label_cells()
     # display_all_images([img['cell_track_draw'] for img in images])
-    # save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectories")
+    save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectoriesWithWatershed")
     # Task 2.1: The cell count (the number of cells) in the image.
     # Task 2.2: The average size (in pixels) of all the cells in the image.
     # Task 2.3: The average displacement (in pixels) of all the cells, from the previous image to the

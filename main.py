@@ -4,9 +4,10 @@ import random
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.cluster import MeanShift
+from sklearn.cluster import MeanShift, estimate_bandwidth
 
-SEQUENCE = '02'
+np.set_printoptions(threshold=np.inf)
+SEQUENCE = '01'
 # If the cells' movement between two frame is less than DIST, it's the same cell.
 DIST = 21
 # The kernel size in opening.
@@ -80,6 +81,8 @@ def image_stretch(image_list):
         arr = np.array([])
         image = cv2.normalize(img, arr, 0, 255, cv2.NORM_MINMAX, cv2.CV_8U)
         output.append(image)
+        dict = {'image_strech': image}
+        images.append(dict)
 
     # Check the image range
     check_image_range(output[0])
@@ -90,40 +93,31 @@ def image_stretch(image_list):
     return output
 
 
-def apply_meanshift(img):
-    # Step 1 - Extract the three RGB colour channels
-    img = np.asarray(img)
-    row, col = img.shape
-    r = img[:, ]
-    g = img[:, ]
-    b = img[:, ]
+def apply_meanshift():
+    for img, index in zip(images, range(len(images))):
+        image = np.asarray(img['image_strech'])
+        row, col = image.shape
+        r = image[:, ]
+        g = image[:, ]
+        b = image[:, ]
+        colour_samples = np.column_stack([r.flatten(), g.flatten(), b.flatten()])
+        bandwidth = estimate_bandwidth(colour_samples, quantile=.06, n_samples=3000)
+        ms_clf = MeanShift(bandwidth=bandwidth, bin_seeding=True)
+        ms_labels = ms_clf.fit_predict(colour_samples)
+        ms_labels = ms_labels.reshape(row, col)
+        images[index]['ms_labels'] = ms_labels
 
-    # Step 2 - Combine the three colour channels by flatten each channel
-    # then stacking the flattened channels together.
-    # This gives the "colour_samples"
-    colour_samples = np.column_stack([r.flatten(), g.flatten(), b.flatten()])
-
-    # Step 3 - Perform Meanshift clustering
-    # For larger images, this may take a few minutes to compute.
-    ms_clf = MeanShift(bandwidth=35, bin_seeding=True)
-    ms_labels = ms_clf.fit_predict(colour_samples)
-
-    # Step 4 - reshape ms_labels back to the original image shape
-    # for displaying the segmentation output
-    ms_labels = ms_labels.reshape(row, col)
-
-    return ms_labels
 
 # Apply the threshold to the images - OTSU thresholding
-def threshold(image_list):
-    for img in image_list:
-        _, image = cv2.threshold(img, 0, 255, cv2.THRESH_OTSU + cv2.THRESH_BINARY)
-        dict = {'image_thre': image, 'image_strech': img}
-        images.append(dict)
+def threshold():
+    for img, index in zip(images, range(len(images))):
+        image = img['ms_labels'].astype(np.uint8)
+        _, image = cv2.threshold(image, 0, 255, cv2.THRESH_OTSU + cv2.THRESH_BINARY)
+        images[index]['image_thre'] = image
         # DEBUG: Uncomment to see the images
-        # cv2.imshow("threshold", image)
-        # cv2.waitKey(0)
-        # cv2.destroyAllWindows()
+        print(image.shape)
+        cv2.imshow("threshold", image)
+        cv2.waitKey(0)
 
 
 # Opening is just another name of erosion followed by dilation.
@@ -131,10 +125,10 @@ def threshold(image_list):
 # Here we use the function,
 # fig.set_title(f'Opening (erosion followed by dilation) image',fontsize=11,fontweight='bold')
 def opening():
-    for img in images:
+    for img,index in zip(images, range(len(images))):
         kernel = np.ones((OPEN_KERNEL_SIZE, OPEN_KERNEL_SIZE), np.uint8)
         opening = cv2.morphologyEx(img['image_thre'], cv2.MORPH_OPEN, kernel)  # plt.figure((10,8),dpi=750)
-        img['image_open'] = opening
+        images[index]['image_open'] = opening
         # DEBUG: Uncomment to see the images
         # cv2.imshow("opening", opening)
         # cv2.waitKey(0)
@@ -166,7 +160,7 @@ def apply_watershed():
 # Segment cells in images, find the contours of the them, record the cells' contours label in the list 'images'
 def contours():
     for img in images:
-        _, contour, _ = cv2.findContours(img['image_ws'], cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        _, contour, _ = cv2.findContours(img['ms_labels'].astype(np.uint8), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         contours_new = []
         for i in contour:
             contours_new.append(i)
@@ -181,8 +175,12 @@ def find_centroid():
         centroid = []
         for i in img['contours']:
             M = cv2.moments(i)
-            cX = int(M["m10"] / M["m00"])
-            cY = int(M["m01"] / M["m00"])
+            if(M["m00"] == 0):
+                cX = 0
+                cY = 0
+            else:
+                cX = int(M["m10"] / M["m00"])
+                cY = int(M["m01"] / M["m00"])
             centroid.append((cX, cY))
         img['contours_center'] = centroid
 
@@ -338,13 +336,15 @@ if __name__ == '__main__':
     # d. No equalization needed, UNCOMMENT THIS TO CHECK THE HISTOGRAM
     # show_histogram(image_list[0])
     # e. Thresholding
-    threshold(image_list)
-    # save_images([img['image_thre'] for img in images], "Dataset/AllImagesAfterThreshold")
+    apply_meanshift()
+    save_images([img['ms_labels'] for img in images], "Dataset/AllImagesWithTrajectoriesMeanShift")
+    threshold()
+    save_images([img['image_thre'] for img in images], "Dataset/AllImagesAfterThreshold")
     # f. remove the noise of the images by erosion and dilation
     opening()
-    apply_watershed()
+    # apply_watershed()
     # display_all_images([img['image_open'] for img in images])
-    save_images([img['image_ws'] for img in images], "Dataset/AllImagesAfterWatershed")
+    # save_images([img['image_ws'] for img in images], "Dataset/AllImagesAfterWatershed")
     # Task 1.1: Segment all the cells and show their contours in the images as overlays.
     contours()
     # display_all_images([img['cell_track_draw'] for img in images])
@@ -354,7 +354,7 @@ if __name__ == '__main__':
     # b. Loop through all the frame, recognise the same cell and label it, label the trajectories at the same time
     label_cells()
     # display_all_images([img['cell_track_draw'] for img in images])
-    save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectoriesWithWatershed")
+    save_images([img['cell_track_draw'] for img in images], "Dataset/AllImagesWithTrajectoriesMeanShift")
     # Task 2.1: The cell count (the number of cells) in the image.
     # Task 2.2: The average size (in pixels) of all the cells in the image.
     # Task 2.3: The average displacement (in pixels) of all the cells, from the previous image to the

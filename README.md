@@ -68,7 +68,7 @@ This project focuses on developing an advanced system for analyzing cell divisio
 - [Project Specification](Specification.pdf)
 - [Marking Criteria](Marking_Criteria.pdf)
 - [Final Report](COMP9517%20Report%20Luminous.pdf)
-- [Demo Video](Demo_Luminous_1080.mp4)
+- [Demo Video](demo_video.mp4)
 
 ## Project Timeline
 - Demo: Thursday 18 November 2021 6-8 PM
@@ -87,4 +87,4 @@ This project focuses on developing an advanced system for analyzing cell divisio
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Video Demonstration
-[Watch Demo Video](Demo_Luminous_1080.mp4)
+[Watch Demo Video](demo_video.mp4)

@@ -87,4 +87,4 @@ This project focuses on developing an advanced system for analyzing cell divisio
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Video Demonstration
-[Watch Demo Video](Demo_Luminous​_1080.mp4)
+[Watch Demo Video](https://www.youtube.com/watch?v=ScR85u2Gj2s&ab_channel=YanyunWu)

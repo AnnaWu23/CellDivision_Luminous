@@ -87,6 +87,6 @@
 本项目采用 MIT 许可证 - 详见 LICENSE 文件。
 
 ## 视频演示
-[观看演示视频](Demo_Luminous_1080.mp4)
+[观看演示视频](https://www.youtube.com/watch?v=ScR85u2Gj2s&ab_channel=YanyunWu)
 
 *点击上方按钮观看项目演示视频* 
